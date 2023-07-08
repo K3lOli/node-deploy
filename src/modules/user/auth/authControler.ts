@@ -22,6 +22,5 @@ export class AuthControler{
             res.json({"value":"false"})
           }
 
-        
     }
 }
