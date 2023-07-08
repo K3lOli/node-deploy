@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "repaginação do site da FMS",
   "main": "index.js",
-  "enginers": {
+  "engines": {
     "node" : "18"
   },
   "scripts": {
