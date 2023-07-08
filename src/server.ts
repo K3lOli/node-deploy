@@ -12,7 +12,8 @@ const corsOptions ={
 const app = express();
 
 app.use(cors({ // o midleware cors deve ser adicionado antes dos outros para não haver riscos de ocorrer erros
-    origin: true
+    origin: 'https://fms-repagination.vercel.app' 
+}
 ));
 
 app.use(express.json());
