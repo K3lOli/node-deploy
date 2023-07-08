@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "repaginação do site da FMS",
   "main": "index.js",
+  "enginers": {
+    "node" : "18"
+  },
   "scripts": {
     "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,8 +26,5 @@
     "ts-node-dev": "^2.0.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
-  },
-  "Host": {
-    "CORS": "*"
   }
 }
