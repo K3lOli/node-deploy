@@ -1,5 +1,7 @@
-import { prisma } from "../../../prisma/client";
 import { UserDTO } from "../dto/userDTO";
+import { PrismaClient } from "@prisma/client";
+
+export const prisma = new PrismaClient();
 
 export class CreateUserUseCase{
     async execute({name, email, password}:UserDTO ) { //função assíncrona que cria o novo usuário

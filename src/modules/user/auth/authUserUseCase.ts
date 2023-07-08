@@ -1,5 +1,7 @@
 import { UserDTO } from "../dto/userDTO";
-import { prisma } from "../../../prisma/client";
+import { PrismaClient } from "@prisma/client";
+
+export const prisma = new PrismaClient();
 
 export class AuthUserUseCase {
   async execute({ name, email, password }: UserDTO) {
